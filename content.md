@@ -479,13 +479,9 @@ img {
 
 ----
 
-<img style="width:40%" src="myAdditions/imgs/4/x1.png" class="x-nodeco">
+<img style="width:65%" src="myAdditions/imgs/4/x1.png" class="x-nodeco">
 
 ```css
-ul {
-  border: 3px solid #000;
-  list-style-type: none;
-}
 li {
   padding: 0 0 10px 32px;
 }
@@ -498,13 +494,9 @@ img {
 
 ----
 
-<img style="width:40%" src="myAdditions/imgs/4/x2.png" class="x-nodeco">
+<img style="width:65%" src="myAdditions/imgs/4/x2.png" class="x-nodeco">
 
 ```css
-ul {
-  border: 3px solid #000;
-  list-style-type: none;
-}
 li {
   padding: 0 0 10px 32px;
   text-indent: -32px; /* 1行目だけ左に32pxずらす */
@@ -520,15 +512,15 @@ img {
 
 <img style="width:80%" src="myAdditions/imgs/4/exp2.png" class="x-nodeco">
 
+---
+
+<img style="width:80%" src="myAdditions/imgs/4/x9.png" class="x-nodeco">
+
 ----
 
-<img style="width:40%" src="myAdditions/imgs/4/x3.png" class="x-nodeco">
+<img style="width:60%" src="myAdditions/imgs/4/x3.png" class="x-nodeco">
 
 ```css
-ul {
-  border: 3px solid #000;
-  list-style-type: none;
-}
 li {
   padding: 0 0 10px 32px;
   text-indent: -32px;
@@ -540,6 +532,10 @@ img {
   margin: -14px 8px -10px 0; /* 32px確保 + 上下の高さ殺し */
 }
 ```
+
+---
+
+<img style="width:80%" src="myAdditions/imgs/4/x10.png" class="x-nodeco">
 
 ---
 
@@ -586,6 +582,10 @@ li {
 }
 ```
 
+---
+
+<img style="width:80%" src="myAdditions/imgs/4/x11.png" class="x-nodeco">
+
 ----
 
 <img style="width:80%" src="myAdditions/imgs/4/x6.png" class="x-nodeco">
@@ -600,6 +600,10 @@ li {
   text-indent: -25px;
 }
 ```
+
+---
+
+<img style="width:80%" src="myAdditions/imgs/4/x12.png" class="x-nodeco">
 
 ----
 
@@ -629,8 +633,10 @@ input {
 
 * `display: inline-block`
 * 外からは`<img>`のようなインライン<br>置換要素のようにレイアウトされる
+* インライン要素とは違い、<br>矩形領域を維持し、行をまたがない
 * 中にブロックレベルの要素を入れられる
-* なかなか柔軟に使えるので色々活躍
+
+なかなか柔軟に使えるので色々活躍
 
 ----
 
@@ -664,16 +670,14 @@ li {
 
 ----
 
-<img style="width:50%" src="myAdditions/imgs/5/x3.png" class="x-nodeco">
+<img style="width:65%" src="myAdditions/imgs/5/x3.png" class="x-nodeco">
 
 ```css
 li {
   padding: 0 0 10px 16px;
 }
 li:before {
-  content: '';
-  width: 8px;
-  height: 8px;
+  content: ''; width: 8px; height: 8px;
   display: inline-block;
   background: url(bullet.png) no-repeat 0 0;
   vertical-align: middle;
@@ -682,7 +686,7 @@ li:before {
 
 ----
 
-<img style="width:50%" src="myAdditions/imgs/5/x4.png" class="x-nodeco">
+<img style="width:65%" src="myAdditions/imgs/5/x4.png" class="x-nodeco">
 
 ```css
 li {
@@ -690,14 +694,16 @@ li {
   text-indent: -16px; /* 左へ */
 }
 li:before {
-  content: '';
-  width: 8px;
-  height: 8px;
+  content: ''; width: 8px; height: 8px;
   display: inline-block;
   background: url(bullet.png) no-repeat 0 0;
   vertical-align: middle;
 }
 ```
+
+---
+
+<img style="width:65%" src="myAdditions/imgs/5/x10.png" class="x-nodeco">
 
 ----
 
@@ -709,15 +715,17 @@ li {
   text-indent: -16px;
 }
 li:before {
-  content: '';
-  width: 8px;
-  height: 8px;
+  content: ''; width: 8px; height: 8px;
   display: inline-block;
   background: url(bullet.png) no-repeat 0 0;
   vertical-align: middle;
   margin: -5px 8px -3px 0; /* マージン調整 */
 }
 ```
+
+---
+
+<img style="width:65%" src="myAdditions/imgs/5/x11.png" class="x-nodeco">
 
 ----
 
@@ -735,7 +743,8 @@ li:before {
 
 ## ちょっとまとめ
 
-色々細かいレイアウト制御に便利
+擬似要素と組み合わせると`<img>`  
+突っ込んだみたいに扱えて便利
 
 ----
 
@@ -755,7 +764,7 @@ li:before {
 
 ```css
 .box {
-  display: inlie-block;
+  display: inline-block;
   vertical-align: middle;
 }
 ```
@@ -799,13 +808,89 @@ li:before {
 
 ----
 
+<img style="width:65%" src="myAdditions/imgs/6/x2.png" class="x-nodeco">
+
+----
+
+```html
+<div class="items">
+  <div class="item">...</div>
+  <div class="item">...</div>
+  <div class="item">...</div>
+  <div class="item">...</div>
+  ...
+</div>
+```
+
+```css
+.item {
+  float: left;
+  width: 25%;
+}
+```
+
+---
+
+<img style="width:65%" src="myAdditions/imgs/6/x1.png" class="x-nodeco">
+
+---
+
+<img style="width:65%" src="myAdditions/imgs/6/x3.png" class="x-nodeco">
+
+----
+
+```html
+<div class="items"><!--
+  --><div class="item">...</div><!--
+  --><div class="item">...</div><!--
+  --><div class="item">...</div><!--
+  --><div class="item">...</div><!--
+  ...
+--></div>
+```
+
+```css
+.item {
+  display: inline-block;
+  vertical-align: top;
+  width: 25%;
+}
+```
+---
+
+<img style="width:65%" src="myAdditions/imgs/6/x4.png" class="x-nodeco">
+
+---
+
+<img style="width:65%" src="myAdditions/imgs/6/x5.png" class="x-nodeco">
+
+----
+
+## IE7以下
+
+```css
+.foo {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+}
+```
+
+----
+
+## ちょっとまとめ
+
+`display:table`や`float`を使うよりも  
+良いケースは色々ある
+
+----
+
 # まとめ
 
 ----
 
-* インラインレイアウトの仕組みを知れば<br>いろいろ悩むところ減って捗る
-* 細かいところにも大きなところにも使えて<br>いろいろ応用が効くヤツ
-* IE8〜なら概ね問題なく使えるので<br>じゃんじゃん使ってるね既に
+* インラインのレイアウトの<br>仕組みを把握すればいろいろ捗る
+* flexboxが使えるようになるまでは<br>`display:table`とインラインブロックを<br>駆使して頑張りましょう
 
 ----
 
