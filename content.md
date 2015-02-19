@@ -262,7 +262,7 @@ img.H { vertical-align: central; }
 
 #### +line-height: 1
 
-<img style="width:100%" src="myAdditions/imgs/2/x-text-top-lh1.png" class="x-nodeco">
+<img style="width:80%" src="myAdditions/imgs/2/x-text-top-lh1.png" class="x-nodeco">
 
 ※leading部分がなくなるから
 
@@ -529,13 +529,34 @@ img {
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  margin: -14px 8px -10px 0; /* 32px確保 + 上下の高さ殺し */
+  margin: 0 8px 0 0; /* 32px確保 */
 }
 ```
 
 ---
 
 <img style="width:80%" src="myAdditions/imgs/4/x10.png" class="x-nodeco">
+
+---
+
+<img style="width:100%" src="myAdditions/imgs/4/x14.png" class="x-nodeco">
+
+----
+
+<img style="width:60%" src="myAdditions/imgs/4/x3.png" class="x-nodeco">
+
+```css
+li {
+  padding: 0 0 10px 32px;
+  text-indent: -32px;
+}
+img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin: -14px 8px -10px 0; /* 32px確保 + 上下の高さ殺し */
+}
+```
 
 ---
 
@@ -556,6 +577,15 @@ margin-bottom: -10px;
 ----
 
 # 4. チェックボックス<br>やラジオボタンの配置
+
+----
+
+<img style="width:100%" src="myAdditions/imgs/4/x13.png" class="x-nodeco">
+
+---
+
+* 大きさ微妙に違う
+* 高さ幅はブラウザによって違う
 
 ----
 
@@ -582,10 +612,6 @@ li {
 }
 ```
 
----
-
-<img style="width:80%" src="myAdditions/imgs/4/x11.png" class="x-nodeco">
-
 ----
 
 <img style="width:80%" src="myAdditions/imgs/4/x6.png" class="x-nodeco">
@@ -603,7 +629,7 @@ li {
 
 ---
 
-<img style="width:80%" src="myAdditions/imgs/4/x12.png" class="x-nodeco">
+<img style="width:80%" src="myAdditions/imgs/4/x11.png" class="x-nodeco">
 
 ----
 
@@ -889,8 +915,9 @@ li:before {
 
 ----
 
+* ミクロなレイアウト制御から<br>マクロなレイアウト制御まで
 * インラインのレイアウトの<br>仕組みを把握すればいろいろ捗る
-* flexboxが使えるようになるまでは<br>`display:table`とインラインブロックを<br>駆使して頑張りましょう
+* `display:table`とインラインブロックを<br>駆使して頑張りたい所存
 
 ----
 
